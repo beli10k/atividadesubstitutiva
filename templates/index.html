@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<img 
+  src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+  class="logo" 
+  alt="Google">
+
+<form action="https://www.google.com/search" method="get" class="search-form">
+
+  <input type="text" name="q" class="search-bar" placeholder="Pesquise no Google" required>
+
+  <div class="buttons">
+    <input type="submit" value="Pesquisa Google">
+    <input type="submit" name="btnI" value="Estou com sorte">
+  </div>
+
+</form>
+
+{% endblock %}

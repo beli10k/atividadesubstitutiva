@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<img 
+  src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+  class="logo" 
+  alt="Google">
+
+<form action="https://www.google.com/search" method="get" class="search-form">
+
+  <input type="text" name="q" class="search-bar" placeholder="Pesquisar imagens">
+
+  <!-- modo de pesquisa por imagens -->
+  <input type="hidden" name="udm" value="2">
+
+  <div class="buttons">
+    <input type="submit" value="Pesquisar Imagens">
+  </div>
+
+</form>
+
+{% endblock %}

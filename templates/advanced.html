@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<h2>Pesquisa Avançada</h2>
+
+<form action="https://www.google.com/search" method="get" class="advanced-form">
+
+  <label>
+    Todas estas palavras:
+    <input type="text" name="as_q">
+  </label>
+
+  <label>
+    Esta frase exata:
+    <input type="text" name="as_epq">
+  </label>
+
+  <label>
+    Qualquer destas palavras:
+    <input type="text" name="as_oq">
+  </label>
+
+  <label>
+    Nenhuma destas palavras:
+    <input type="text" name="as_eq">
+  </label>
+
+  <div class="buttons">
+    <input type="submit" value="Pesquisa Avançada">
+  </div>
+
+</form>
+
+{% endblock %}
